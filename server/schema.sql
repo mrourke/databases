@@ -20,7 +20,4 @@ CREATE TABLE messages(
   userId INT,
   roomId INT,
   PRIMARY KEY(id),
-  INDEX(userId, roomId),
-  FOREIGN KEY (userId) REFERENCES users(id) ON DELETE CASCADE,
-  FOREIGN KEY (roomId) REFERENCES rooms(id) ON DELETE CASCADE
 );
